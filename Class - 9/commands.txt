@@ -1,0 +1,93 @@
+root@VINAYAK-PAKA:/home/docker/mysql-data# history
+    1  clear
+    2  docker run hello-world
+    3  docker ps
+    4  docker ps -a
+    5  docker run ngnix
+    6  docker run nginx
+    7  docker run -d nginx
+    8  docker run ps
+    9  docker ps
+   10  docker container inspect b
+   11  curl 172.17.0.2
+   12  docker ps
+   13  docker exec -it b bash
+   14  dokcer run -it ubuntu bash
+   15  docker run -it ubuntu bash
+   16  docker login
+   17  docker login -u vinayakpaka22
+   18  docker ps
+   19  docker ps -a
+   20  docker exec -it 613 bash
+   21  docker start 613
+   22  docker exec -it 613 bash
+   23  clear
+   24  docker container
+   25  docker ps
+   26  docker commit -m "ubuntu-with-java" 613 vinayakpaka22/ubuntu-with-java
+   27  docker images
+   28  docker push vinayakpaka/ubuntu-with-java
+   29  docker push vinayakpaka22/ubuntu-with-java
+   30  docker ps -a
+   31  docker info
+   32  sudo su
+   33  docker info
+   34  cd /var/lib/docker/overlay2/
+   35  ls
+   36  cd ..
+   37  clear
+   38  ls
+   39  cd overlay2/
+   40  ls
+   41  docker ps
+   42  dokcer stop 61 b0
+   43  docker stop 61 b0
+   44  docker ps -a
+   45  docker container prune
+   46  docker ps -a
+   47  docker images
+   48  docker rmi 75 9dd d26 d49 97b 1b4
+   49  ls
+   50  docker rmi vinayakpaka22/devops-webapp:1.0 devops-webapp:1.0
+   51  docker rmi -f 9dd11fb5e6d6
+   52  docker images
+   53  docker rmi d4
+   54  docker images
+   55  ls
+   56  cd l
+   57  ls
+   58  docker pull nginx
+   59  docker images
+   60  cd ..
+   61  ls
+   62  docker image inspect d2
+   63  EXIT
+   64  exit
+   65  cd /var/lib/docker/
+   66  ls
+   67  cd containers/
+   68  ls
+   69  docker ps
+   70  docker run -d nginx
+   71  ls
+   72  docker ps
+   73  docker stop ec
+   74  ls
+   75  docker rm ec
+   76  ls
+   77  cd ..
+   78  docker run -d -e MYSQL_ROOT_PASSWORD=admin -v /home/docker/mysql-data:/var/lib/mysql --name mysqlserver mysql
+   79  docker ps
+   80  docker exec -it c2 bash
+   81  docker exec -it mysqlserver bash
+   82  docker ps
+   83  docker container prune
+   84  docker ps -a
+   85  docker stop 4b
+   86  docker ps
+   87  docker ps -a
+   88  cd /home/docker/mysql-data/
+   89  ls
+   90  docker ps
+   91  history
+root@VINAYAK-PAKA:/home/docker/mysql-data#
