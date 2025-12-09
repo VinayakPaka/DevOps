@@ -1,0 +1,54 @@
+Kubernetes – Clean & Rephrased Notes
+✨ API Server & Kubelet Workflow
+
+Kubelet sends REST API requests to the API Server.
+
+The API Server handles authentication, authorization, and validation of all incoming requests.
+
+After validation, the API Server interacts with etcd, the key-value store for cluster state.
+
+✨ Kubernetes Scheduler
+
+Works on an event-driven architecture.
+
+Selects the most suitable node for pod placement based on resource requirements, constraints, and scheduling rules.
+
+✨ Pod
+
+A Pod is the smallest deployable unit in Kubernetes.
+
+It can contain one or more containers.
+
+Containers inside a pod are:
+
+Co-scheduled (run together)
+
+Co-located (run on the same node)
+
+The API Server instructs the Kubelet to create pods.
+
+✨ Kubelet
+
+Works with the Container Runtime Interface (CRI) to create and manage containers inside pods.
+
+Continuously reports pod status back to the API Server.
+
+Also sends node status to the API Server at regular intervals.
+
+✨ Data Plane
+
+The Data Plane consists of the physical or virtual machines where the pods and containers actually run.
+
+It includes components responsible for executing workloads, such as the kubelet and container runtime.
+
+✨ Node
+
+A Node is typically a virtual machine (commonly 95% of real use cases).
+
+It can also be a physical machine, depending on cluster setup.
+
+✨ Communication Between Master & Worker Nodes
+
+Worker → Master: Must communicate through a Load Balancer.
+
+Master → Worker: Can communicate directly without requiring a load balancer.
