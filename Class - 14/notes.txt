@@ -1,0 +1,33 @@
+In general we don't create the pods or replicasets. we will deal with the deployments.
+
+### Advantages of Pod :
+
+* If a container crashes it is replaced.
+
+### Advantages of Replicasets :
+
+* If a pod's or node crashes it is replaced ( as long as it has the capacity ).
+
+* Scale out and scale - in.
+
+* Replicas - when they are deleted they will replaced automatically with the replicas we have.
+
+### Rolling Update :
+
+A **Rolling Update** means Kubernetes updates your application **gradually**, one Pod at a time (or a few at a time), so that:
+
+### ✔ Your app keeps running
+
+### ✔ No downtime happens
+
+### ✔ New version replaces old version smoothly
+
+### Scaling
+
+In **Kubernetes there are three different types of scaling.**
+
+1. HPA => We can the limits of running the pods and also we can set minimum and maximum pods running. Initially there will be only minimum specified pods will be running if the load increases then it runs more pods up to the maximum specified pods.
+
+2. VPA => We VPA, we can increase the GPU, memory and space.
+
+3. CA => When it reaches the limit add more machines.
