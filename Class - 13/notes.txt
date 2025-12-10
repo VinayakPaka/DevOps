@@ -1,0 +1,67 @@
+✨ kubeadm init
+
+The command kubeadm init converts a machine into a Master Node (Control Plane node).
+
+After initializing, we:
+
+Set up the Control Plane components, and
+
+Generate a join command for worker nodes.
+
+This join command is used on another machine to make it a Worker Node.
+
+✨ Behavior of Control Plane During Failures
+Pod Container Crash
+
+If a container inside a pod crashes:
+
+Kubelet continuously monitors pod health.
+
+It instructs the Container Runtime (CRI) to restart or recreate the container.
+
+After recovery, Kubelet informs the API Server that the pod was recreated.
+
+System-Level Crash
+
+If the entire system/node crashes, Kubernetes cannot recreate the pod automatically unless:
+
+A Controller (Deployment, StatefulSet, ReplicaSet, etc.) is managing it.
+
+Bare pods (pods created directly without controllers) will not be restored automatically.
+
+✨ API Concepts
+
+Every Kubernetes REST API endpoint has an API Version.
+
+Metadata refers to information about the resource, such as:
+
+Name
+
+Namespace
+
+Labels
+
+Annotations
+
+UID
+
+✨ Useful kubectl Commands
+Delete Pods
+
+kubectl delete po --all
+Deletes all pods in the current namespace.
+
+View ReplicaSets
+
+kubectl get rs
+Displays all ReplicaSets.
+
+Apply a Manifest File
+
+kubectl apply -f <file>
+Creates or updates the Kubernetes resources defined in the file.
+
+Delete Resources from a Manifest
+
+kubectl delete -f <file>
+Deletes the resources defined in the file.
